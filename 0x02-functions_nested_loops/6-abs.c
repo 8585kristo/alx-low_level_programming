@@ -3,24 +3,21 @@
 #include <stdlib.h>
 
 /**
- * print_last_digit - a function that prints the last digit of a number
- * @c: integer whose value is unknown
+ * _abs - a function that computes the absolute value of an integer
+ * @c: integer needed to be checked
  *
- * Description: a function that prints the last digit of a number
- * Return: the value of the last digit
+ * Description: a function that computes the absolute value of an integer
+ * Return: is equal to the absolute of c
  */
 
-int print_last_digit(int c)
+int _abs(int c)
 {
-
-	int i;
-
-	i = c % 10;
-
-	if (i < 0)
-		i *= -1;
-	_putchar(i + '0');
-
-	return (i);
+	if (c == 0 || c > 0)
+	{
+		return (c);
+	}
+	else
+	{
+		return (c * -1);
+	}
 }
-
