@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 /**
@@ -19,10 +20,6 @@ int main(void)
 		if (count == 50)
 		{
 			printf("%lu\n", j);
-		}
-		else
-		{
-				printf("%lu\n", j);
 		}
 		else
 		{
